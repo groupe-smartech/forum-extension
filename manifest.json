@@ -1,0 +1,32 @@
+{
+    "name": "Adoasis",
+    "version": "1.0",
+    "description": "L'extension officielle Adoasis pour utiliser le chat, voir les nouveaux topics, tes notifications et tes messages !",
+    "author": "Martii",
+    "manifest_version": 3,
+
+    "icons": {
+        "16": "icons/16.png",
+        "24": "icons/24.png",
+        "32": "icons/32.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png",
+        "256": "icons/256.png",
+        "512": "icons/512.png"
+    },
+
+    "permissions": ["background", "storage"],
+    "host_permissions": ["https://adoasis.fr/*"],
+    
+    "action": {
+        "default_icon": "icons/512.png",
+        "default_title": "Adoasis",
+        "default_popup": "pages/popup.html"
+    },
+
+    "background": {
+        "service_worker": "js/background.js"
+    }
+
+    // "options_page": "pages/options.html"
+}

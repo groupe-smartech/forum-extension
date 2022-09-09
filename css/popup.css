@@ -1,0 +1,44 @@
+html {
+    /*overflow: auto;*/
+    height: 500px;
+    max-height: 500px;
+    width: 300px;
+    max-width: 300px;
+    font-size: 11.5pt;
+}
+
+.nav-item > a.active {
+    color: -webkit-filter: invert(100%);
+    filter: invert(100%);
+    cursor: initial;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #787878;
+}
+
+#adoasischat {
+    overflow: auto;
+    max-height: 72vh;
+    overflow-wrap: break-word;
+}
+#notifications {
+    overflow: auto;
+    max-height: 72vh;
+}
+#messagerie {
+    overflow: auto;
+    max-height: 72vh;
+}
+
+#chatInputGroup, #clearNotifs, #clearMessages {
+    width: 300px;
+}
